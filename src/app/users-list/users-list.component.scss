@@ -1,0 +1,29 @@
+:host::ng-deep {
+    .user-cards-data {
+        .user-card-info {
+            margin: 30px 20px;
+       }
+   }
+}
+.user-cards-data {
+    height: 100%;
+    background: #FAFAFA;
+    .user-card-info {
+        max-width: 400px;
+   }
+    .user-card-address-content {
+        margin-bottom: 20px;
+        .user-card-address {
+            margin-bottom: 5px;
+            font-weight: bold;
+       }
+   }
+    .user-card-com-data {
+        .com {
+            margin: 5px 0;
+            .label-name {
+                font-weight: bold;
+           }
+       }
+   }
+}

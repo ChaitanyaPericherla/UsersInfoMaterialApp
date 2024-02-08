@@ -1,0 +1,27 @@
+<div class="user-cards-data">
+    <mat-card class="user-card-info" *ngFor="let userInfo of usersList">
+        <mat-card-header>
+            <mat-card-title>{{userInfo.name}}</mat-card-title>
+            <mat-card-subtitle>{{userInfo.email}}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content class="user-card-address-content">
+            <p class="user-card-address">User address:</p>
+            <address>
+                {{userInfo.address.street}}<br />
+                {{userInfo.address.suite}}<br />
+                {{userInfo.address.city}}
+                {{userInfo.address.zipcode}}
+            </address>
+        </mat-card-content>
+        <mat-card-content class="user-card-com-data">
+            <p class="com">
+                <label class="label-name">Phone:</label>
+                {{userInfo.phone}}
+            </p>
+            <p class="com">
+                <label class="label-name">Website:</label>
+                {{userInfo.website}}
+            </p>
+        </mat-card-content>
+    </mat-card>
+</div>
